@@ -3,15 +3,16 @@
 <head>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Origin Coding Language Quiz</title>
+  <title>Stay Curious Coding Language Quiz</title>
 </head>
 <body>
   <div>
-    <h1 id="Origin">Origin</h1>
-    <h3>Want to learn to code but don't know where to start? Fill out the form below and we'll point you in the right direction.</h3>
-    <h3><em>Please be sure to only enter terms in <strong>bold!</strong></em></h3>
-    <form>
-      <label for="experience">How much programming experience do you have? <strong>Beginner</strong>, <strong>Intermediate</strong>, <strong>Advanced</strong>, or <strong>Master</strong>?</label>
+    <h1 id="Origin">Programming Language Selector</h1>
+    <h3>Want to learn to a new programming language? Fill out the form below and we'll point you in the right direction.</h3>
+    <h3><em>Please be sure to only enter terms in bold, exactly as they appear.</em></h3>
+    <form id="quiz">
+      <p id="error-message" class="hidden">OOPS! Looks like your form contained some errors. Please verify that you've only used the bolded words to answer and double check for typos.</p>
+      <label for="experience">How much programming experience do you have? <strong>Beginner</strong>, <strong>Professional</strong>, or <strong>Master</strong>?</label>
       <input id="experience" type="text" name="experience">
       <br>
       <label for="frontorback">Are you more interested in working in <strong>front-end</strong> or <strong>back-end</strong> development?</label>
@@ -26,9 +27,10 @@
       <label for="workplace">Which company is your dream employer?: <strong>Apple, Google, Microsoft, Mozilla,</strong> or <strong>not sure</strong>.</label>
       <input id="workplace" type="text" name="workplace">
       <br>
-      <label for="gift">Imagine it's your birthday and your friends all brought a gifts. You got a <strong>precious gemstone, </strong> a <strong> snake, </strong> a <strong> bag of coffee, </strong> and a <strong>Taylor Swift vinyl album.</strong> Which is your favorite?</label>
+      <label for="gift">Imagine it's your birthday and your friends all brought a gifts. You got a <strong>gemstone, </strong> a <strong>snake, </strong> a <strong> bag of coffee, </strong> an <strong>old car, </strong> and a <strong>Taylor Swift vinyl album.</strong> Which is your favorite?</label>
       <input id="gift" type="text" name="gift">
-      <button type="submit">Submit</button>
+      <br>
+      <button id="submit" type="submit">Submit</button>
     </form>
 
     <div id="ruby" class="hidden">
@@ -40,7 +42,7 @@
     <div id="javascript" class="hidden">
       <h2>Javascript</h2>
     </div>
-    <div is=go class="hidden">
+    <div id=go class="hidden">
       <h2>Go</h2>
     </div>
     <div id="python" class="hidden">
@@ -49,8 +51,20 @@
     <div id="rust" class="hidden">
       <h2>Rust</h2>
     </div>
-    <div is="swift" class="hidden">
+    <div id="swift" class="hidden">
       <h2>Swift</h2>
+    </div>
+    <div id="html" class="hidden">
+      <h2>HTML</h2>
+    </div>
+    <div id="css" class="hidden">
+      <h2>CSS</h2>
+    </div>
+    <div id="java" class="hidden">
+      <h2>Java</h2>
+    </div>
+    <div id="malboge" class="hidden">
+      <h2>Malboge</h2>
     </div>
   </div>
 </body>
