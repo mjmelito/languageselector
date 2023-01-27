@@ -7,9 +7,9 @@
 </head>
 <body>
   <div>
-    <h1 id="Origin">Programming Language Selector</h1>
+    <h1 id="Origin">Curious Coder</h1>
     <h3>Want to learn to a new programming language? Fill out the form below and we'll point you in the right direction.</h3>
-    <h3><em>Please be sure to only enter terms in bold, exactly as they appear.</em></h3>
+    <h3><em>Please be sure to only enter terms in bold, exactly as they appear. Keep in mind that this form is case sensitive.</em></h3>
     <form id="quiz">
       <p id="error-message" class="hidden">OOPS! Looks like your form contained some errors. Please verify that you've only used the bolded words to answer and double check for typos.</p>
       <label for="experience">How much programming experience do you have? <strong>Beginner</strong>, <strong>Professional</strong>, or <strong>Master</strong>?</label>
@@ -32,39 +32,59 @@
       <br>
       <button id="submit" type="submit">Submit</button>
     </form>
+    <div class="program-pages">
+      <div id="ruby" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Ruby</span></h2>
+      </div>
 
-    <div id="ruby" class="hidden">
-      <h2>Ruby</h2>
-    </div>
-    <div id="csharp" class="hidden">
-      <h2>C#</h2>
-    </div>
-    <div id="javascript" class="hidden">
-      <h2>Javascript</h2>
-    </div>
-    <div id=go class="hidden">
-      <h2>Go</h2>
-    </div>
-    <div id="python" class="hidden">
-      <h2>Python</h2>
-    </div>
-    <div id="rust" class="hidden">
-      <h2>Rust</h2>
-    </div>
-    <div id="swift" class="hidden">
-      <h2>Swift</h2>
-    </div>
-    <div id="html" class="hidden">
-      <h2>HTML</h2>
-    </div>
-    <div id="css" class="hidden">
-      <h2>CSS</h2>
-    </div>
-    <div id="java" class="hidden">
-      <h2>Java</h2>
-    </div>
-    <div id="malboge" class="hidden">
-      <h2>Malboge</h2>
+      <div id="csharp" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">C#</span></h2>
+      </div>
+
+      <div id="javascript" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">JavaScript</span></h2>
+      </div>
+
+      <div id=go class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Go</span></h2>
+      </div>
+
+      <div id="python" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Python</span></h2>
+      </div>
+
+      <div id="rust" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Rust</span></h2>
+      </div>
+
+      <div id="swift" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Swift</span></h2>
+      </div>
+
+      <div id="html" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">HTML</span></h2>
+        <p class="description">
+          Hyper Text Markup Language (HTML, for short) is the standard language used to create web pages. Using a series of 
+          elements paired with text, HTML describes the structure of a webpage to the web browsers displaying them. HTML was 
+          invented in 1991 by Tim-Berners-Lee while he was working as a contractor for the European Organization for Nuclear Research, known as CERN. 
+        </p>
+      </div>
+
+      <div id="css" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">CSS</span></h2>
+      </div>
+
+      <div id="java" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Java</span></h2>
+      </div>
+
+      <div id="malboge" class="hidden">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Malboge</span></h2>
+        <p class="description"> Malboge is an esoteric programming language, designed in 1998 by Ben Olmstead. Named after the eighth circle of 
+          hell in Dante's <em>Inferno</em>, the 'Malebolge', it was deliberately designed to be next to impossible to use.
+        </p>
+      </div>
+
     </div>
   </div>
 </body>

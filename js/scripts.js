@@ -22,13 +22,13 @@ window.onload = function() {
     const exp = document.querySelector("input#experience").value;
     const end = document.querySelector("input#frontorback").value;
     const brain = document.querySelector("input#brain").value;
-    const writart = document.querySelector("input#writerartist").value;
+    const writeOrArt = document.querySelector("input#writerartist").value;
     const workplace = document.querySelector("input#workplace").value;
     const gift = document.querySelector("input#gift").value;
     
-    if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writart === "writer") {
+    if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "writer") {
       document.getElementById("html").removeAttribute("class");
-    } else if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writart === "artist") {
+    } else if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "artist") {
         document.getElementById("css").removeAttribute("class");
     } else if (exp === "Beginner" && end === "front-end" && brain === "left-brained") {
         document.getElementById("javascript").removeAttribute("class");
