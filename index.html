@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Stay Curious Coding Language Quiz</title>
 </head>
 <body>
-  <div>
-    <h1 id="Origin">Curious Coder</h1>
-    <h3>Want to learn to a new programming language? Fill out the form below and we'll point you in the right direction.</h3>
-    <h3><em>Please be sure to only enter terms in bold, exactly as they appear. Keep in mind that this form is case sensitive.</em></h3>
-    <form id="quiz">
-      <p id="error-message" class="hidden">OOPS! Looks like your form contained some errors. Please verify that you've only used the bolded words to answer and double check for typos.</p>
-      <label for="experience">How much programming experience do you have? <strong>Beginner</strong>, <strong>Professional</strong>, or <strong>Master</strong>?</label>
-      <input id="experience" type="text" name="experience">
-      <br>
-      <label for="frontorback">Are you more interested in working in <strong>front-end</strong> or <strong>back-end</strong> development?</label>
-      <input id="frontorback" type="text" name="frontorback">
-      <br>
-      <label for="brain">Are you more <strong>left-brained</strong> or <strong>right-brained? </strong></label>
-      <input id="brain" type="text" name="brain">
-      <br>
-      <label for="writerartist">If you had to pick, would you rather be a <strong>writer</strong> or an <strong>artist</strong>? </label>
-      <input id="writerartist" type="text" name="writerartist">
-      <br>
-      <label for="workplace">Which company is your dream employer?: <strong>Apple, Google, Microsoft, Mozilla,</strong> or <strong>not sure</strong>.</label>
-      <input id="workplace" type="text" name="workplace">
-      <br>
-      <label for="gift">Imagine it's your birthday and your friends all brought a gifts. You got a <strong>gemstone, </strong> a <strong>snake, </strong> a <strong> bag of coffee, </strong> an <strong>old car, </strong> and a <strong>Taylor Swift vinyl album.</strong> Which is your favorite?</label>
-      <input id="gift" type="text" name="gift">
-      <br>
-      <button id="submit" type="submit">Submit</button>
-    </form>
+  <div id="top">
+    <h1 class="display-2">Curious Coder</h1>
+    <h3 id="subhead" class="display-5">Want to learn to a new programming language? Fill out the form below and we'll point you in the right direction.</h3>
+    <hr>
+  </div>
+    <div id="formbox">
+      <h3><em id="warning">Please be sure to only enter terms in bold, exactly as they appear. Keep in mind that this form is case sensitive.</em></h3>
+      <form id="quiz" class="card">
+        <p id="error-message" class="hidden">OOPS! Looks like your form contained some errors. Please verify that you've only used the bolded words to answer and double check for typos.</p>
+        <label for="experience">How much programming experience do you have? <strong>Beginner</strong>, <strong>Professional</strong>, or <strong>Master</strong>?</label>
+        <input id="experience" type="text" name="experience">
+        <br>
+        <label for="frontorback">Are you more interested in working in <strong>front-end</strong> or <strong>back-end</strong> development?</label>
+        <input id="frontorback" type="text" name="frontorback">
+        <br>
+        <label for="brain">Are you more <strong>left-brained</strong> or <strong>right-brained? </strong></label>
+        <input id="brain" type="text" name="brain">
+        <br>
+        <label for="writerartist">If you had to pick, would you rather be a <strong>writer</strong> or an <strong>artist</strong>? </label>
+        <input id="writerartist" type="text" name="writerartist">
+        <br>
+        <label for="workplace">Which company is your dream employer?: <strong>Apple, Google, Microsoft, Mozilla,</strong> or <strong>not sure</strong>.</label>
+        <input id="workplace" type="text" name="workplace">
+        <br>
+        <label for="gift">Imagine it's your birthday and your friends all brought a gifts. You got a <strong>gemstone, </strong> a <strong>snake, </strong> a <strong> bag of coffee, </strong> an <strong>old car, </strong> and a <strong>Taylor Swift vinyl album.</strong> Which is your favorite?</label>
+        <input id="gift" type="text" name="gift">
+        <br>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
     <div class="program-pages">
       <div id="ruby" class="hidden">
+        <img src="img/ruby.jpg" alt="The Ruby Logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Ruby</span></h2>
       </div>
 
       <div id="csharp" class="hidden">
+        <img src="img/csharp.png" alt="The C Sharp logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">C#</span></h2>
       </div>
 
       <div id="javascript" class="hidden">
+        <img src="img/javascript.png" alt="The JavaScript logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">JavaScript</span></h2>
       </div>
 
-      <div id=go class="hidden">
+      <div id="go" class="hidden">
+        <img src="img/go.png" alt="The Go logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Go</span></h2>
       </div>
 
       <div id="python" class="hidden">
+        <img src="img/python.png" alt="The Python logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Python</span></h2>
       </div>
 
       <div id="rust" class="hidden">
+        <img src="img/rust.png" alt="The Rust logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Rust</span></h2>
       </div>
 
       <div id="swift" class="hidden">
+        <img arc="img/swift.png" alt="The Swift logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Swift</span></h2>
       </div>
 
       <div id="html" class="hidden">
+        <img src="img/HTMLlogo.png" alt="The HTML Logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">HTML</span></h2>
         <p class="description">
           Hyper Text Markup Language (HTML, for short) is the standard language used to create web pages. Using a series of 
@@ -71,21 +84,23 @@
       </div>
 
       <div id="css" class="hidden">
+        <img src="img/css.png" alt="The CSS logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">CSS</span></h2>
       </div>
 
       <div id="java" class="hidden">
+        <img src="img/java.png" alt="The Java logo" class="logo">
         <h2>Based on your responses, we think you should learn <span class="langannounce">Java</span></h2>
       </div>
 
-      <div id="malboge" class="hidden">
-        <h2>Based on your responses, we think you should learn <span class="langannounce">Malboge</span></h2>
-        <p class="description"> Malboge is an esoteric programming language, designed in 1998 by Ben Olmstead. Named after the eighth circle of 
+      <div id="malbolge" class="hidden">
+        <img src="img/malbolge.png" alt="A 'Caution Malbolge' photo" class="logo">
+        <h2>Based on your responses, we think you should learn <span class="langannounce">Malbolge</span></h2>
+        <p class="description"> Malbolge is an esoteric programming language, designed in 1998 by Ben Olmstead. Named after the eighth circle of 
           hell in Dante's <em>Inferno</em>, the 'Malebolge', it was deliberately designed to be next to impossible to use.
         </p>
       </div>
 
     </div>
-  </div>
 </body>
 </html>
