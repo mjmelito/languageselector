@@ -19,58 +19,64 @@ window.onload = function() {
     }
     hideResultsAndError();
 
-    const exp = document.querySelector("input#experience").value;
-    const end = document.querySelector("input#frontorback").value;
-    const brain = document.querySelector("input#brain").value;
-    const writeOrArt = document.querySelector("input#writerartist").value;
-    const workplace = document.querySelector("input#workplace").value;
-    const gift = document.querySelector("input#gift").value;
+    const expUserInput = document.querySelector("input#experience").value;
+    const exp = expUserInput.toLowerCase();
+    const endUserInput = document.querySelector("input#frontorback").value;
+    const end = endUserInput.toLowerCase();
+    const brainUserInput = document.querySelector("input#brain").value;
+    const brain = brainUserInput.toLowerCase();
+    const writeOrArtUserInput = document.querySelector("input#writerartist").value;
+    const writeOrArt = writeOrArtUserInput.toLowerCase();
+    const workplaceUserInput = document.querySelector("input#workplace").value;
+    const workplace = workplaceUserInput.toLowerCase();
+    const giftUserInput = document.querySelector("input#gift").value;
+    const gift = giftUserInput.toLowerCase();
     
-    if ((exp === "Beginner" || exp === "beginner") && (end === "front-end"|| end === "Front-End") && (brain === "right-brained" || brain === "Right-brained") && (writeOrArt === "writer" || writeOrArt === "Writer")) {
+    if (exp === "beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "writer") {
       document.getElementById("html").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "artist") {
+    } else if (exp === "beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "artist") {
         document.getElementById("css").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Beginner" && end === "front-end" && brain === "left-brained") {
+    } else if (exp === "beginner" && end === "front-end" && brain === "left-brained") {
         document.getElementById("javascript").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Beginner" && end === "back-end") {
+    } else if (exp === "beginner" && end === "back-end") {
         document.getElementById("javascript").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && gift === "bag of coffee" && workplace === "not sure") {
+    } else if (exp === "professional" && gift === "bag of coffee" && workplace === "not sure") {
         document.getElementById("java").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && gift === "gemstone" && workplace === "not sure") {
+    } else if (exp === "professional" && gift === "gemstone" && workplace === "not sure") {
         document.getElementById("ruby").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && gift === "snake" && workplace === "not sure") {
+    } else if (exp === "professional" && gift === "snake" && workplace === "not sure") {
         document.getElementById("python").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && workplace === "Google") {
+    } else if (exp === "professional" && workplace === "google") {
       document.getElementById("go").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && workplace === "Microsoft") {
+    } else if (exp === "professional" && workplace === "microsoft") {
       document.getElementById("csharp").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && (workplace === "Apple" || gift === "Taylor Swift vinyl album")) {
+    } else if (exp === "professional" && (workplace === "apple" || gift === "taylor swift vinyl album")) {
         document.getElementById("swift").removeAttribute("class");
         document.getElementById("quiz").setAttribute("class", "hidden");
         document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Professional" && (workplace === "Mozilla" || gift === "old car")) {
+    } else if (exp === "professional" && (workplace === "mozilla" || gift === "old car")) {
       document.getElementById("rust").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");
-    } else if (exp === "Master") {
+    } else if (exp === "expert") {
       document.getElementById("malbolge").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");
