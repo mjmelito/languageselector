@@ -2,6 +2,7 @@ window.onload = function() {
   const form = document.querySelector("form");
   form.onsubmit = function(event) {
     event.preventDefault();
+    document.getElementById("back").removeAttribute("class");
 
     function hideResultsAndError() {
       document.getElementById("error-message").setAttribute("class", "hidden");

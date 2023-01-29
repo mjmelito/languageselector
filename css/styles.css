@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(87, 117, 141);
+  background-color:rgb(78, 124, 126);
   color: rgb(29, 29, 29);
 }
 
@@ -57,12 +57,13 @@ body {
 
 .logo {
   float: left;
-  width: 15vw;
+  width: 20vw;
   margin: 40px;
   padding: 20px;
-  background-color:rgb(87, 117, 141)
 }
 
-.body2 {
-  background-color:rgb(87, 117, 141)
+#back {
+  background: rgb(223, 223, 223);
+  border-radius: 10px;
+  width: 10vw;
 }
