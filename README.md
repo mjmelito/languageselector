@@ -16,8 +16,6 @@ Code Curious is a platform that gathers basic information from the user and repo
 
 ## Setup/Installation Requirements
 
-* To view this application, visit mjmelito.github.io/portfolio
-* OR
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory.
 * Open index.html in your browser.
