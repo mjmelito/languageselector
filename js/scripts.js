@@ -26,7 +26,7 @@ window.onload = function() {
     const workplace = document.querySelector("input#workplace").value;
     const gift = document.querySelector("input#gift").value;
     
-    if (exp === "Beginner" && end === "front-end" && brain === "right-brained" && writeOrArt === "writer") {
+    if ((exp === "Beginner" || exp === "beginner") && (end === "front-end"|| end === "Front-End") && (brain === "right-brained" || brain === "Right-brained") && (writeOrArt === "writer" || writeOrArt === "Writer")) {
       document.getElementById("html").removeAttribute("class");
       document.getElementById("quiz").setAttribute("class", "hidden");
       document.getElementById("warning").setAttribute("class", "hidden");

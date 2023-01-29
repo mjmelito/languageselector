@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(26, 26, 26);
-  color: chartreuse;
+  background-color: rgb(241, 241, 241);
+  color: rgb(29, 29, 29);
 }
 
 .hidden {
@@ -22,7 +22,7 @@ body {
 #warning {
   font-size: large;
   font-style: bold;
-  color: rgb(248, 150, 4);
+  color: rgb(243, 243, 243);
 }
 
 #formbox {
@@ -30,21 +30,22 @@ body {
   width: 80vw;
   color: black;
   padding: 10px;
+  border-radius: 25px;;
 }
 
 #quiz {
   padding: 45px;
   font-size: large;
-  background-color:rgb(214, 212, 212)
+  background-color:rgb(172, 172, 172)
 }
 
 #submit {
   background-color: black;
-  color:chartreuse;
+  color:rgb(224, 222, 224);
 }
 
 .program-pages {
-  color: rgb(236, 236, 236);
+  color: rgb(228, 226, 226);
   width: 90vw;
   margin: auto;
 }
@@ -54,4 +55,8 @@ body {
   width: 15vw;
   margin: 40px;
   padding: 20px;
+}
+
+.body2 {
+  background-color:rgb(87, 117, 141)
 }
