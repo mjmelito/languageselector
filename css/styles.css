@@ -4,7 +4,7 @@ body {
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
 #error-message {
@@ -19,6 +19,7 @@ body {
   padding: 10px;
   background-color:rgb(224, 222, 224)
 }
+
 #subhead {
   font-size:x-large;
 }
